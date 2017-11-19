@@ -6,8 +6,4 @@ RUN apk add --no-cache --virtual --update py-pip make wget ca-certificates ttf-d
     && pip install --upgrade pip \
     && pip install sphinx sphinx_rtd_theme sphinxcontrib-plantuml sphinx_autobuild
 
-RUN wget http://downloads.sourceforge.net/project/plantuml/plantuml.jar -P /opt/ \
-    && echo -e '#!/bin/sh -e\njava -jar /opt/plantuml.jar "$@"' > /usr/local/bin/plantuml \
-    && chmod +x /usr/local/bin/plantuml
-
 WORKDIR /doc
