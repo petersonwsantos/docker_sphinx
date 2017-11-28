@@ -49,3 +49,4 @@ typing==3.6.2
 urllib3==1.22
 watchdog==0.8.3
 wrapt==1.10.11 
+guzzle_sphinx_theme==0.7.11
